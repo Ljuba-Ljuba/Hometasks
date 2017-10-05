@@ -27,4 +27,4 @@ elif a>b: # проверяем при a>b
     if b>c:# при list1=c
         list2=b
 
-print(list1,',',list2,',',list3)
+print(list1,list2,list3, sep=",")
