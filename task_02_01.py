@@ -26,10 +26,13 @@ def is_palindrome(s): #определяем функцию
 
     #метод translate заменяет в строке символы в соответствии с параметром t
     # t задаем с помощью статического метода maketrans()
-    t=str.maketrans({" ": None,",": None,"-": None,".": None,":": None})
+    t=str.maketrans({" ": None,",": None,"-": None,".": None,":": None,
+                       ";": None,"!": None, "?": None
+                    })
     str_2=str_1.translate(t)#в пер-ную str_2 помещаем новую строку без пробелов
 
     #сравниваем прямую строку с перевернутой и возвращаем значения
     result=True if str_2==str_2[::-1] else False
-
+    print(result)
     return result #выходим из функции. возвращаем значение
+is_palindrome("Сел в озере березов лес")
