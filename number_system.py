@@ -87,7 +87,7 @@ def trasl_from_dec(number,bas):#функция для перевода из 10т
     res.append(str(dict.get(str(number))))
 
     res=res[::-1] # переворачиваем список
-    res='"'+"".join(res)+'"' #формируем строчный результат
+    res="".join(res) #формируем строчный результат
     return res #возвращаем
 
 
